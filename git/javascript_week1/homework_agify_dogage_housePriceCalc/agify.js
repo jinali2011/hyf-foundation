@@ -84,6 +84,8 @@ const secondWords = [
   "llp",
 ];
 
-const startupName = firstWords + secondWords;
-console.log(startupName);
+//const startupName = [firstWords[0] + secondWords[0]],[firstWords[1]+secondWords[1]],[firstWords[2]+secondWords[2]],;
+//console.log(startupName);
 const startUp = Math.floor(Math.random() * 7);
+const startupName = [firstWords[0] + secondWords[0]] * 7;
+console.log(startupName);

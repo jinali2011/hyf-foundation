@@ -24,7 +24,7 @@ function logOutNotesFormatted() {
 saveNote("Pick up groceries", 1);
 saveNote("Do laundry", 2);
 
-const firstgitNote = getNote(2);
+const firstNote = getNote(2);
 console.log(firstNote);
 
 logOutNotesFormatted();

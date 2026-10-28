@@ -30,7 +30,7 @@ function GetMahEntertainmentInvestment(seriesDurations) {
   const myTotalAge = 80; //sorry... strange but true is that indian's avg. life is 60 :D, hahahhaa...
   let totalSeriesTime = 0;
 
-  for (let index = 0; index < seriesDurations.length; index++) {
+  for (let i = 0; i < seriesDurations.length; index++) {
     //'Game of thrones took 0.01% of my life'
     //      Years     Life
     //     80 years = 100 % life
@@ -40,9 +40,9 @@ function GetMahEntertainmentInvestment(seriesDurations) {
 
     // 1. Convert everything into total hours
     const totalHours =
-      seriesDurations[index].days * 24 +
-      seriesDurations[index].hours +
-      seriesDurations[index].minutes / 60;
+      seriesDurations[i].days * 24 +
+      seriesDurations[i].hours +
+      seriesDurations[i].minutes / 60;
 
     // 2. Divide by total hours in a standard year (365 days * 24 hours)
     const yearValue = totalHours / (365 * 24);
@@ -50,7 +50,7 @@ function GetMahEntertainmentInvestment(seriesDurations) {
 
     totalSeriesTime = totalSeriesTime + timeInvested;
     const element =
-      seriesDurations[index].title +
+      seriesDurations[i].title +
       " took " +
       timeInvested.toFixed(3) +
       "% of my life.";

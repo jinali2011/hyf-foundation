@@ -1,0 +1,91 @@
+// const balance = 1000;
+// if (balance <= 0) {
+//   console.log("Please deposite some money!");
+// } else if (balance > 0 && balance <= 1000) {
+//   console.log("Your balance is looking okay");
+// } else if (balance > 1000 && balance <= 3000) {
+//   console.log("Your bal is looks good");
+// } else if (balance < 3000 && balance <= 10000) {
+//   console.log("your bala is fantastic.");
+// } else {
+//   console.log("Your balance is amazing");
+// }
+
+import { Weight } from "lucide-react";
+
+// function getCircleArea(radius) {
+//   return Math.PI * radius * radius;
+// }
+// const result=getCircleArea;
+// console.log(result(2));
+
+// function getCircleArea(radius) {
+//   Math.PI * radius * radius;
+// }
+// console.log(getCircleArea(2));
+
+// function celsiusToFahrenheit(celcius) {
+//   return (celcius * 9) / 5 + 32;
+// }
+// const result = celsiusToFahrenheit;
+// console.log(result(0));
+// console.log(result(100));
+// console.log(result);
+const global = "global";
+
+// function scopeTest() {
+//   console.log(localScope);
+//   console.log(global);
+//   const localScope = "localScope";
+
+//   function tester() {
+//     console.log(global);
+//     const testerVariable = "testerVariable";
+//   }
+
+//   tester();
+//   console.log(testerVariable);
+// }
+
+// scopeTest();
+
+// const string="hello";
+// const numberZero=0;
+// const numberOne=1;
+// const numberFive=5;
+// function logString(string, repetitions){
+
+// console.log(string.repeat(repetitions);
+// }
+
+// logString("hello",3);
+
+// for (let numberSeventyFour = 74; numberSeventyFour >= 98; numberSeventyFour++) {
+//   console.log(numberSeventyFour);
+// }
+
+// const emailList =
+//   "benjamin@gmail.com|peter@gmail.com|hans@gmail.com|" +
+//   "ahmad@gmail.com|sana@gmail.com|virgeen@gmail.com";
+
+// const emailArray= emailList.split("|");
+
+//   function senEmailTo(recipient){
+
+// for (let i=0;i<recipient.length;i++){
+// console.log("email sent to"+recipient[0]);
+// }
+
+function getTicketPrice(age, isStudent) {
+  if (age < 6) {
+    return 0;
+  }
+  if (isStudent || age >= 65) return 50;
+  return 100;
+}
+console.log(getTicketPrice(20, true));
+
+const getRectangeArea = (width, height) => {
+  return Weight * height;
+};
+console.log(getRectangeArea(4, 3));

@@ -1,6 +1,6 @@
 //What is my name - should respond with the name of the person. What if the name has not yet been mentioned?
-let nameData = [];
-let myToDo = [];
+const nameData = [];
+const myToDo = [];
 //https://runjs.app/play nice playgound
 function getReply(command) {
   //Work 1

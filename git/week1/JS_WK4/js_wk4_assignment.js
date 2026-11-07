@@ -1,4 +1,4 @@
-const nameData = [];
+let userName = "";
 const myToDo = [];
 
 function getReply(command) {
@@ -8,8 +8,8 @@ function getReply(command) {
   if (commandLowerCase.includes("hello my name is")) {
     let myName = commandLowerCase.replace("hello my name is", "").trim();
 
-    if (!nameData.includes(myName)) {
-      nameData.push(myName);
+    if (userName != myName) {
+      userName = myName;
       return `Nice to meet you ${myName}`;
     } else {
       return `Hello Again, Nice to meet you ${myName}`;
@@ -18,8 +18,8 @@ function getReply(command) {
 
   // WORK 2: What is my name?
   if (commandLowerCase.includes("what is my name")) {
-    if (nameData.length > 0) {
-      return `Your name is ${nameData[0]}`;
+    if (userName.length > 0) {
+      return `Your name is ${userName}`;
     } else {
       return `Sorry, your name is not present.`;
     }
@@ -137,7 +137,7 @@ function getReply(command) {
 }
 
 console.log(getReply("Hello my name is Benjamin"));
-console.log(getReply("Hello my name is Jinali"));
+
 console.log(getReply("Hello my name is Benjamin"));
 
 console.log(getReply("What is my name?"));

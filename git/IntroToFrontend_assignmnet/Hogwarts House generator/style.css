@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #ffffff;
+  color: #2f251c;
+  font-family: serif;
+}
+
+h2 {
+  color: #271e21;
+  text-align: center;
+}
+
+button {
+  background: #000000;
+  color: #fffdf8;
+
+  margin: 10px;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #000000;
+}
